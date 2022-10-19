@@ -97,22 +97,26 @@ section .title{
 
 section.about{
     background: #eaf2fd;
+    color: #464646;
 }
 
 .about__container {
     padding: 30px 150px 30px 150px;
-    grid-template-columns: 60%;
-    grid-area: 'texto';
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid__item {
+    grid-column: 1/2;
+
 }
 
 .about__title {
     font-size: 2em;
-    display: grid;
 }
 
 .about__paragraph {
-    text-align: left;
-    grid-area: 'texto';
+
 }
 
 /*Sección Hobbies*/
@@ -130,8 +134,80 @@ section.academic{
 /* experiencia*/
 
 section.experience{
-
+    margin: 10px 150px 30px 150px;
+    color: #464646;
 }
+
+.experience__section__title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.experiencie__box {
+    display: flex;
+    gap: 4em;
+    margin-bottom: 70px;
+}
+
+.experiencie__box2 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 6em;
+    margin-bottom: 70px;
+}
+
+.experience__info {
+    align-self: center;
+}
+
+.experience__title{
+    font-size: 1.4em;
+}
+
+.experience__text {
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+.experience__description{
+    display: flex;
+    gap: 0.8em;
+}
+
+.experience__botao--demo {
+    background-color: #2a7ae4;
+    font-size: 1em;
+    color: #F5F5F5;
+    padding: 12px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.experience__botao--demo:hover{
+    background-color: #1351d7;
+    transition: background-color .5s;
+}
+
+.experiencia__botao--repo{
+    color: #2a7ae4;
+    background-color: #F5F5F5;
+    font-size: 1em;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border-color: #2a7ae4;
+    border-style: solid;
+}
+
+.experiencia__botao--repo:hover{
+    color: #F5F5F5;
+    background-color: #2a7ae4;
+    transition: background-color .5s;
+}
+
+
+
 
 /*Contacto*/
 
