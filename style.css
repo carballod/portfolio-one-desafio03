@@ -13,7 +13,7 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
     font-family: 'Raleway';
-    margin: 10px 150px 30px 150px;
+    margin: 0;
     padding: 0;
     line-height: 1;
 }
@@ -42,6 +42,9 @@ https://en.bem.info/methodology/quick-start/*/
 section.menu{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 10px 150px 30px 150px;
 }
 
 .menu__header {
@@ -54,26 +57,62 @@ section.menu{
 .menu__list{
     display: flex;
     gap: 2em;
-    
 }
 
 .menu__list__item:last-child {
     font-weight: bold;
 }
 
-
-
-
 /*Sección Title*/
 
-section.title{
+section .title{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.title__div {
+    margin: 10px 150px 30px 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 60px;
+}
+
+.title__bio {
+    font-size: 3.5em;
+    color: #464646;
+}
+
+.title__subsection {
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+
+.title__network {
+    display: flex;
+    gap: 3em;
+    flex-wrap: wrap;
 }
 
 /*Sección About*/
 
 section.about{
+    background: #eaf2fd;
+}
 
+.about__container {
+    padding: 30px 150px 30px 150px;
+    grid-template-columns: 60%;
+    grid-area: 'texto';
+}
+
+.about__title {
+    font-size: 2em;
+    display: grid;
+}
+
+.about__paragraph {
+    text-align: left;
+    grid-area: 'texto';
 }
 
 /*Sección Hobbies*/
