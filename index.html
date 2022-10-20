@@ -63,45 +63,46 @@
 
     <!-- Sección de Skills -->
     <section class="skills" id="skills">
-        <h3 class="skills__title">Skills</h3>
+        <div class="skills__container">
+            <h3 class="skills__title">Skills</h3>
             <div class="skills__line">
                 <div class="skills__box">
-                    <ul>
+                    <ul class="skill_box_contenido">
                         <li class="skills__img"><img src="assets\htlm.png"></li>
                         <li class="skills__name"> HTML 5</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
-                    <ul>
+                    <ul class="skill_box_contenido">
                         <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
                         <li class="skills__name">Javascript</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
-                    <ul>
+                    <ul class="skill_box_contenido">
                         <li class="skills__img"> <img src="assets\php_icon.png" alt=""></li>
                         <li class="skills__name">PHP</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
-                    <ul>
+                    <ul class="skill_box_contenido">
                         <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
                         <li class="skills__name">Node JS</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
-                    <ul>
+                    <ul class="skill_box_contenido">
                         <li class="skills__img"> <img src="assets\react_icon.png" alt=""> </li>
                         <li class="skills__name">React</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
-                    <ul>
+                    <ul class="skill_box_contenido">
                         <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
                         <li class="skills__name">CSS</li>
                     </ul>
@@ -114,42 +115,42 @@
         <h3 class="hobbies__title">Hobbies</h3>
             <div class="hobbies__line">
                 <div class="hobbies__box">
-                    <ul>
+                    <ul class="hobbies_box_contenido">
                         <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
                         <li class="hobbies__name"> Patinaje</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
-                    <ul>
+                    <ul class="hobbies_box_contenido">
                         <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
                         <li class="hobbies__name">Tocar bajo</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
-                    <ul>
+                    <ul class="hobbies_box_contenido">
                         <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
                         <li class="hobbies__name">Oir música</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
-                    <ul>
+                    <ul class="hobbies_box_contenido">
                         <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
                         <li class="hobbies__name">Ver séries</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
-                    <ul>
+                    <ul class="hobbies_box_contenido">
                         <li class="hobbies__img"> <img src="assets\forkspoon_icon.png" alt=""> </li>
                         <li class="hobbies__name">Cocinar</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
-                    <ul>
+                    <ul class="hobbies_box_contenido">
                         <li class="hobbies__img"> <img src="assets\camera_icon.png" alt=""> </li>
                         <li class="hobbies__name">Tomar fotos</li>
                     </ul>
@@ -164,7 +165,9 @@
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\ufpr_logo.png"></li>
+                    <div class="context_image_academic">
+                        <li class="academic__courses__item__img"><img src="assets\ufpr_logo.png"></li>
+                    </div>
                     <li class="academic__courses__item__title"><h4>Análisis de datos</h4></li>
                     <li class="academic__courses__item__subtitle"><p>2018 - UFPR</p></li>
                 </ul>
@@ -172,7 +175,9 @@
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!--Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
+                    <div class="context_image_academic">
+                        <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
+                    </div>
                     <li class="academic__courses__item__title"><h4>Formación en UX Design</h4></li>
                     <li class="academic__courses__item__subtitle"><p>2019 - Alura</p></li>
                 </ul>
@@ -180,7 +185,9 @@
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\ufrj_logo.png"></li>
+                    <div class="context_image_academic">
+                        <li class="academic__courses__item__img"><img src="assets\ufrj_logo.png"></li>
+                    </div>
                     <li class="academic__courses__item__title"><h4>Posgrado en diseño</h4></li>
                     <li class="academic__courses__item__subtitle"><p>En curso - UFRJ</p></li>
                 </ul>
@@ -197,7 +204,7 @@
             <img class="experience__img" src="assets\decod_print.png">
             <div class="experience__info">
                 <h2 class="experience__title">Encriptador de texto</h2>
-                <h3 class="experience__text">Challenge Alura Codificador </h3>
+                <h3 class="experience__text">Challenge Alura Codificador</h3>
                     <div class="experience__description">
                         <!-- Pon el enlace del proyecto en Github o GithubPages -->
                             <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositorio</button></a></span>
@@ -289,7 +296,7 @@
         <section class="footer">
             <div class="footer__rodape">
                 <p>Desarrollado por Fulana de Tal</p>
-                <p>2022</p>
+                <p class="footer__text">2022</p>
             </div>
         </section>
     </div>
